@@ -1,3 +1,11 @@
+## Ali Kadir's Note
+1) Apply following MacOS steps
+2) Run **./build_all.sh**
+3) Download last chipset database [here](https://antenna-dvb-t2.ru/dl_all/IMSProg.Dat).
+4) Move the database file in `~/.local/share/imsprog/` folder
+5) Run Program `~/Desktop/PROJECTS/IMSProg/IMSProg_programmer/build/IMSProg` executable program file.
+
+
 ## IMSProg
 
 <img align="right" src="img/mini_logo_IMSProg.svg">
