@@ -2860,7 +2860,7 @@ static SPI_NAND_FLASH_RTN_T spi_nand_write_page( u32 page_number, u32 data_offse
 		ptr_dev_info_t = _SPI_NAND_GET_DEVICE_INFO_PTR;
 
 		/* Read Current page data to software cache buffer */
-		rtn_status = spi_nand_read_page(page_number, speed_mode);
+		rtn_status = spi_nand_read_page(page_number, ptr_dev_info_t->read_mode);
 		if (Skip_BAD_page && (rtn_status == SPI_NAND_FLASH_RTN_DETECTED_BAD_BLOCK)) { /* skip BAD page, go to next page */
 			return SPI_NAND_FLASH_RTN_DETECTED_BAD_BLOCK;
 		}
