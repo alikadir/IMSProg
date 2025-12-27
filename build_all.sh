@@ -32,8 +32,6 @@ rm -rf build/
 mkdir build/
 cmake -S . -B build/
 cmake --build build/ --parallel
-cmake --install build/
-rm -rf build/
 )
 (
 cd IMSProg_editor
@@ -41,8 +39,6 @@ rm -rf build/
 mkdir build/
 cmake -S . -B build/
 cmake --build build/ --parallel
-cmake --install build/
-rm -rf build/
 )
 # Reloading the USB rules for Linux
 [[ "$OSTYPE" != "darwin"* ]] && udevadm control --reload-rules
